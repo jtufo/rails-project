@@ -1,0 +1,16 @@
+%nav.navbar.navbar-default
+  .container
+    .navbar-header
+      %button.navbar-toggle{type: "button", data: {target: "#bs-example-navbar-collapse-1", toggle: "collapse"}}
+
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Pinteresting', '#', class: 'navbar-brand'
+
+
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'Home', root_path
+        %li= link_to 'About Us', about_path
