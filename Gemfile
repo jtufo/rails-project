@@ -19,7 +19,7 @@ group :development, :test do #Adds to local and testing servers
 end
 
 group :production do #Adds to only production
-  gem 'pg',
+  gem 'pg'
   gem 'rails_12factor'
 end
 
