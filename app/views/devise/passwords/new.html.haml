@@ -10,7 +10,7 @@
         %br/
         = f.email_field :email, :autofocus => true, class: "form-control"
 
-      .form-group= f.submit "Send me reset password instructions"
+      .form-group= f.submit "Send me reset password instructions", class: "btn btn-primary"
 
   .panel-footer
     = render "devise/shared/links"
