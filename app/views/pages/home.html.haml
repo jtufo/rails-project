@@ -1,5 +1,9 @@
 .jumbotron.center
   %h1 Welcome to my app!
   %p
-    = link_to 'Login', about_path, class: 'btn btn-primary btn-lg'
-    = link_to 'Sign Up', about_path, class: 'btn btn-primary btn-lg'
+    - if user_signed_in?
+      %p Your in the app now guy!
+
+    - else
+      = link_to 'Login', new_user_session_path, class: 'btn btn-primary btn-lg'
+      = link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary btn-lg'

@@ -15,6 +15,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
+gem 'devise'
+
 group :development, :test do #Adds to local and testing servers
   gem 'sqlite3' # Use sqlite3 as the database for Active Record
 end
